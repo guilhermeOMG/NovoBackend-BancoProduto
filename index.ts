@@ -11,7 +11,7 @@ app.get('/produtos', async (request: FastifyRequest, reply: FastifyReply) => {
             host: "localhost",
             user: 'root',
             password: "",
-            database: 'banco1023a',
+            database: 'BancoBackend',
             port: 3306
         })
         const resultado =  await conn.query("SELECT * FROM produtos")
